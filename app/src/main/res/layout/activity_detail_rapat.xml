@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back5"
+	android:orientation="vertical" >
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:background="@drawable/header2"
+		android:id="@+id/LLDetailRapat0">
+		<ImageView
+			android:layout_width="80dp"
+			android:layout_height="80dp"
+			android:src="@drawable/preview"
+			/>
+		<TextView
+			android:text="Undangan"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:id="@+id/tv_judul_tracking"
+			android:textSize="40sp"
+
+			android:gravity="right|center_vertical"
+			android:layout_gravity="right|center_horizontal"
+			android:textColor="@android:color/background_light" />
+
+	</LinearLayout>
+
+
+	<LinearLayout 
+    android:id="@+id/LLDetailRapat1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+		android:layout_marginTop="5dp"
+	android:layout_marginRight="10dp"
+    android:orientation="vertical"
+		android:layout_marginBottom="5dp"
+		android:layout_below="@+id/LLDetailRapat0">
+
+			<WebView
+			    android:id="@+id/WVDetailRapat"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:scrollbars="none"  />
+	</LinearLayout >
+	<LinearLayout
+			    android:id="@+id/LLDetailRapat2"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_gravity="bottom"
+			    android:orientation="horizontal"
+		android:layout_below="@+id/LLDetailRapat1">
+
+		<dprdjepara.multisolusi.info.dprdjepara.ui.HorizontalListView
+			android:id="@+id/hlv_dokumen"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scrollbars="none"  />
+	</LinearLayout >
+			
+	        
+</RelativeLayout >

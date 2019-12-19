@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item  
+	     android:id="@+id/option_menu_search"  
+	     android:title="@string/option_menu_search"  
+	      android:icon="@android:drawable/ic_menu_search"
+	     android:showAsAction="ifRoom|collapseActionView"
+	    android:actionViewClass="android.widget.SearchView"
+	   /> 
+	   
+	   <item  
+	     android:id="@+id/option_menu_kalender"  
+	     android:title="@string/option_menu_kalender"  
+	   />
+	   
+	   <item  
+	     android:id="@+id/option_menu_log"  
+	     android:title="@string/option_menu_log"  
+	   />
+	   <item  
+	     android:id="@+id/option_menu_tentang"  
+	     android:title="@string/option_menu_tentang"  
+	      android:icon="@drawable/ic_menu_about"
+	   />
+</menu>

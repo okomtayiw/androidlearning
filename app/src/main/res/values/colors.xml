@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="Oranye">#fddfa2</color>
+    <color name="green">#4499cc00</color>
+    <color name="grey">#555555</color>
+
+    <item name="transparant" type="color">#00ffffff</item>
+    <item name="darkgreen" type="color">#FF669900</item>
+
+    <color name="appRed2">#E25041</color>
+    <color name="appRed3">#FFFF0000</color>
+    <color name="appRed4">#FE0C0C</color>
+    <color name="appRed6">#FF0000</color>
+    <color name="appRedTop">#B9312C</color>
+
+    <color name="appYelow">#FFC44D</color>
+    <color name="appYelow2">#F39C12</color>
+    <color name="appYelow3">#FFFCF3E4</color>
+    <color name="appYellow4">#FFC000</color>
+    <color name="appYelow4">#FF6F00</color>
+
+    <color name="appGrey">#9B9B9B</color>
+    <color name="appGrey1">#EEEEEE</color>
+    <color name="appGrey2">#D8D8D8</color>
+    <color name="appGrey3">#616161</color>
+    <color name="appGrey4">#E0E0E0</color>
+    <color name="appGrey5">#8A4A4A4A</color>
+    <color name="appGrey6">#7D7D7D</color>
+    <color name="appGrey7">#4D4D4D</color>
+    <color name="appGrey8">#999999</color>
+    <color name="appGrey9">#E6E6E6</color>
+    <color name="appGrey10">#4A4A4A</color>
+    <color name="appGrey11">#BDBDBD</color>
+    <color name="appGrey12">#F3F3F3</color>
+    <color name="appGrey13">#ECEFF0</color>
+    <color name="appGrey14">#E5E5E5</color>
+    <color name="appGrey15">#F4F4F4</color>
+    <color name="appGrey16">#898989</color>
+    <color name="appGrey17">#767676</color>
+    <color name="appGrey18">#FF9B9B9B</color>
+    <color name="appGrey19">#FFD4D4D4</color>
+    <color name="appGrey20">#f5f5f5</color>
+    <color name="appGrey21">#D4D4D4</color>
+    <color name="appGrey22">#707070</color>
+    <color name="appGrey23">#464646</color>
+    <color name="appGrey24">#FCFCFC</color>
+    <color name="appGrey25">#29E9E9E9</color>
+    <color name="appGreyBase">#F3F3F3</color>
+
+    <color name="appGreen01">#17AF06</color>
+
+
+
+    <color name="appBlue">#4A90E2</color>
+    <color name="appBlue2">#7DAFEA</color>
+    <color name="appWhite">#ffffff</color>
+    <color name="appWhite90">#e6ffffff</color>
+    <color name="appBlack">#000000</color>
+    <color name="appLightBlack">#2D2D2D</color>
+
+    <!--Brand Color-->
+    <color name="appLightYellow">#FCD54F</color>
+    <color name="appYellow">#F8CC28</color>
+    <color name="appDarkYellow">#F7C105</color>
+    <color name="appYellow2">#FBCC28</color>
+    <color name="appLightOrange">#F5AC37</color>
+    <color name="appOrange">#F39C12</color>
+    <color name="appOrange2">#FF8B00</color>
+    <color name="appOrange3">#FFF39C12</color>
+    <color name="appOrange4">#FFF5AC37</color>
+    <color name="appOrange5">#F4A82F</color>
+    <color name="appDarkOrange">#E3910C</color>
+    <!--End Brand Color-->
+
+    <!--UI Colors-->
+    <color name="appGreen">#4CAF50</color>
+    <color name="appLightGreen">#66BB6A</color>
+    <color name="appGreen2">#D0FFCB</color>
+    <color name="appGreen3">#A3F1AA</color>
+    <color name="appGreen4">#82DF8B</color>
+    <color name="appGreenBase">#0F9401</color>
+    <color name="appGreenLight">#12B800</color>
+    <color name="appGreenSamsung">#66990F</color>
+    <color name="appRed">#EF5350</color>
+    <!--End UI Colors-->
+
+    <!--Grey Colors-->
+    <color name="appSlate">#3B3B3B</color>
+    <color name="appLightSlate">#55544E</color>
+    <color name="appLightGrey">#AEAEAE</color>
+    <color name="appVeryLightGrey">#EAEAEA</color>
+    <color name="appSnow">#FAFAFA</color>
+    <color name="appGreyLine">#bebebe</color>
+    <color name="appSnow2">#FBFBFB</color>
+    <color name="appGreySystemBar">#F9F9F9</color>
+    <!--End Grey Colors-->
+
+    <color name="black">#3B3B3B</color>
+    <color name="blackopacity80">#66000000</color>
+    <color name="black_checkbox">#010101</color>
+
+    <color name="transparent">#00000000</color>
+
+    <!--Tapped Colors-->
+    <color name="appSlateTapped">#803B3B3B</color>
+    <color name="settingsActive">#EE6510</color>
+    <color name="deliveryActive">#F8DAA8</color>
+    <!--End Tapped Colors-->
+</resources>

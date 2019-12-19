@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/ll_menu_utama"
+    android:background="@drawable/back5"
+    android:layout_width="match_parent"
+    tools:context=".MenuActivity"
+    android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_home" android:background="@drawable/ic_home" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikHome"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Home"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_rapat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_rapat" android:background="@drawable/ic_message" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikRapat"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Acara"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_calendar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_calendar" android:background="@drawable/ic_calendar" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikCalendar"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Kalender"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_perda" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_perda" android:background="@drawable/ic_perda" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikPerda"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Peraturan"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_chat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_chat" android:background="@drawable/ic_chat" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikChat"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Chat"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_profile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_profile" android:background="@drawable/ic_profile" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikProfile"/>
+        <TextView android:textSize="15sp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Profile"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_info" android:background="@drawable/information" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikInfo"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Informasi"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_dashboard" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10dp">
+        <ImageButton android:id="@+id/fab_dashboard" android:background="@drawable/dashboard" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitCenter" android:onClick="KlikDashboard"/>
+        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dashboard"/>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

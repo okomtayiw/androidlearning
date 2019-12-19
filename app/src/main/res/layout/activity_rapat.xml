@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:id="@+id/ll_menu_utama"
+	android:background="@color/appWhite"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<!--ToolBar-->
+	<RelativeLayout
+		android:id="@+id/header_informasi"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:layout_marginBottom="1dp"
+		android:background="@color/appBlue"
+		android:elevation="4dp">
+
+		<RelativeLayout
+			android:id="@+id/backImage_rapat"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp">
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="6dp"
+				android:src="@drawable/ic_back_white"
+				android:visibility="visible"/>
+
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/headerTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:fontFamily="@font/opensans_regular"
+			android:text="Rapat"
+			android:textColor="@color/appWhite"
+			android:textSize="20sp" />
+
+
+
+	</RelativeLayout>
+	<LinearLayout
+		android:id="@+id/search_rapat"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:layout_marginLeft="5dp"
+		android:layout_marginTop="2dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginBottom="8dp"
+		android:background="@drawable/white_filled_grey_border"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/et_cari"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:layout_marginLeft="20dp"
+			android:background="@color/transparent"
+			android:focusableInTouchMode="true"
+			android:hint="Cari"
+			android:imeOptions="actionSearch"
+			android:inputType="text"
+			android:textColor="@color/appBlack"
+			android:textColorHint="@color/appGrey21" />
+
+		<ImageView
+			android:id="@+id/bt_find"
+			android:layout_width="24dp"
+			android:layout_height="24dp"
+			android:layout_alignParentRight="true"
+			android:layout_gravity="center"
+			android:layout_marginRight="13dp"
+			android:src="@drawable/icon_search"
+			android:tint="@color/appBlue"
+		    android:onClick="carirapat"/>
+	</LinearLayout>
+	<ListView
+		android:id="@+id/listview_rapat"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="5dp"/>
+
+
+	<LinearLayout
+		android:gravity="bottom"
+		android:orientation="vertical"
+		android:id="@+id/LLRapat"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/ll_menu_utama"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/appWhite"
+	android:orientation="vertical"
+	tools:context=".EdokumenActivity">
+	<!--ToolBar-->
+	<RelativeLayout
+		android:id="@+id/header_perda"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:layout_marginBottom="1dp"
+		android:background="@color/appBlue"
+		android:elevation="4dp">
+
+		<RelativeLayout
+			android:id="@+id/backImage_perda"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp">
+
+			<ImageView
+				android:layout_width="25dp"
+				android:layout_height="25dp"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="6dp"
+				android:src="@drawable/ic_back_white"
+				android:visibility="visible"/>
+
+
+		</RelativeLayout>
+
+		<TextView
+			android:id="@+id/headerTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:fontFamily="@font/opensans_regular"
+			android:text="Peraturan"
+			android:textColor="@color/appWhite"
+			android:textSize="20sp" />
+
+
+
+	</RelativeLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="10px"
+		android:background="@android:color/background_light">
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_marginTop="10px">
+			<TextView
+				android:text="Kategori :"
+				android:fontFamily="@font/opensans_regular"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:id="@+id/tv_jenis_bidang"
+				android:textStyle="bold"
+				android:layout_gravity="right"
+				android:gravity="right"/>
+
+			<Spinner
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/sp_kategori"
+				android:layout_weight="1"
+				android:layout_gravity="center_vertical" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/search_informasi"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:layout_marginLeft="5dp"
+			android:layout_marginTop="8dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginBottom="8dp"
+			android:background="@drawable/white_filled_grey_border"
+			android:orientation="horizontal">
+
+
+			<EditText
+				android:id="@+id/et_cari"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:fontFamily="@font/opensans_regular"
+				android:layout_weight="1"
+				android:layout_marginLeft="20dp"
+				android:background="@color/transparent"
+				android:focusableInTouchMode="true"
+				android:hint="Cari Peraturan"
+				android:imeOptions="actionSearch"
+				android:inputType="text"
+				android:textColor="@color/appBlack"
+				android:textColorHint="@color/appGrey21" />
+
+			<ImageView
+				android:id="@+id/bt_find"
+				android:layout_width="24dp"
+				android:layout_height="24dp"
+				android:layout_alignParentRight="true"
+				android:layout_gravity="center"
+				android:layout_marginRight="13dp"
+				android:src="@drawable/icon_search"
+				android:onClick="cariperaturan"
+				android:tint="@color/appBlue" />
+		</LinearLayout>
+
+
+	</LinearLayout>
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="10px"
+		android:layout_marginRight="10px"
+		android:layout_marginBottom="10px"
+		android:layout_marginTop="5px"
+		android:textColor="#FFFFFF"
+		android:textSize = "15px"
+		android:background="@android:color/white">
+
+		<ListView
+			android:id="@+id/listview_edokumen"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="5dp">
+		</ListView>
+	</FrameLayout>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:gravity="bottom"
+		android:id="@+id/LLEdokumen" >
+	</LinearLayout >
+
+
+</LinearLayout>

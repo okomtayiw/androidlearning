@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    android:id="@+id/LL_row_chatt">
+
+    <FrameLayout
+        android:id="@+id/left_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/chat_message_arrow"
+        android:rotation="270"
+        android:layout_marginLeft="-20dp"/>
+
+
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/chat_message_background"
+        android:id="@+id/message"
+        android:padding="10dp">
+
+        <TextView android:id="@+id/tv_pesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+        <TextView android:id="@+id/tv_from"
+            android:textStyle="normal"
+            android:textColor="#E0E0E0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp" />/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/right_arrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/chat_message_arrow"
+        android:rotation="90"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/message"
+        android:layout_alignEnd="@+id/message"
+        android:layout_marginRight="-25dp"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

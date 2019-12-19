@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "org.multisolusi.dprdjepara"
+        minSdkVersion 17
+        targetSdkVersion 24
+        versionCode 111
+        versionName '111'
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    //implementation 'com.android.support:design:26.0.0'
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.0.0-alpha1'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.android.support:multidex:1.0.1'
+
+    //implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation 'com.android.support:design:26.1.0'
+
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+    implementation 'androidx.navigation:navigation-fragment:2.1.0'
+    implementation 'androidx.navigation:navigation-ui:2.1.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
+    //implement carousel
+    implementation 'com.synnapps:carouselview:0.1.4'
+    //cardview
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    //recyclerview
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+
+    //raunded ImageView
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Edittetx
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //CircleImage
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+
+
+
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dprdjepara.multisolusi.info.dprdjepara">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"></activity>
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="@string/title_activity_menu"></activity>
+        <activity
+            android:name=".TentangActivity"
+            android:label="@string/title_activity_tentang"></activity>
+        <activity
+            android:name=".RapatActivity"
+            android:label="@string/title_activity_rapat"></activity>
+        <activity
+            android:name=".DetailRapat"
+            android:label="@string/title_activity_detail_rapat"></activity>
+        <activity
+            android:name=".KalenderActivity"
+            android:label="@string/title_activity_kalender"></activity>
+        <activity
+            android:name=".PreviewActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".EdokumenActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".CalendarActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".InformasiActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name=".ChattutamaActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".ChattActivity" />
+        <activity android:name=".chattroom" />
+
+        <provider
+            android:name=".GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/external_files" />
+        </provider>
+
+        <service android:name=".DprdAlarmService" />
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+</manifest>

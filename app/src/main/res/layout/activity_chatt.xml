@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/back5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/header" android:background="@drawable/header2" android:layout_width="match_parent" android:layout_height="80dp">
+        <ImageView android:id="@+id/iv_chatt" android:layout_width="80dp" android:layout_height="80dp"/>
+        <TextView android:textSize="40sp" android:textColor="@android:color/background_light" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right" android:id="@+id/tv_judul" android:layout_width="match_parent" android:layout_height="match_parent" android:text="Chatt"/>
+    </LinearLayout>
+    <ListView android:id="@+id/listview_chatt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="5dp" android:stackFromBottom="true" android:transcriptMode="alwaysScroll" android:dividerHeight="5dp" android:layout_above="@+id/footer" android:layout_below="@+id/header"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/header" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <EditText android:textColor="@android:color/white" android:id="@+id/messageEdit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <Button android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:id="@+id/sendButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Kirim"/>
+    </LinearLayout>
+</RelativeLayout>

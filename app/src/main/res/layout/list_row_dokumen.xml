@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:layout_marginRight="5dp"
+    android:orientation="horizontal"
+    android:id="@+id/LL_row_dokumen"
+    android:background="@android:color/holo_purple">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="80dp"
+        android:orientation="vertical">
+        <TextView
+            android:text="Test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_judul"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8dp"
+            android:id="@+id/tv_tanggal"
+            />
+    </LinearLayout>
+    <WebView
+        android:id="@+id/WVDetailRapatIsi"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scrollbars="none"  />
+
+</LinearLayout>
